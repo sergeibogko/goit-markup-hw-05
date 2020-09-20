@@ -44,22 +44,21 @@ body {
   border-radius: 4px;
 }
 .btm-close {
+  display: inline-flex;
   position: absolute;
   top: 15px;
   right: 15px;
   width: 30px;
   height: 30px;
-
-  background: #ffffff;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background: #ffffff; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 .btm-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 11px;
-  height: 11px;
+  display: inline-flex;
   fill: #000000;
 }
 /* Утилиты */
@@ -185,10 +184,12 @@ body {
 .header a:hover svg,
 .header a:focus svg {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header a:hover,
 .header a:focus {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .flexbox {
@@ -205,6 +206,7 @@ body {
 }
 .link-icon :hover {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hero */
@@ -441,6 +443,7 @@ body {
 .social-icon-link:hover {
   background-color: #2196f3;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon-link:hover .social-icon {
   fill: var(--fons-color);
@@ -498,9 +501,11 @@ body {
 }
 .client-icon-link:hover .client-cart-icon {
   fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon-link:hover {
   border: 1px solid #2196f3;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Footer */
 .footer {
@@ -587,6 +592,7 @@ body {
 }
 .footer-icon-item :hover {
   fill: var(--fons-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
   width: 20px;
@@ -706,10 +712,12 @@ body {
 .elemens:hover .portfolio-text-img {
   opacity: 1;
   transform: translateY(-0px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .elemens:hover .portfolio-img::before {
   opacity: 1;
   transform: translateY(-0px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-title {
   padding-top: 20px;
