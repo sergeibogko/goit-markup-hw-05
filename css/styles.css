@@ -580,6 +580,7 @@ body {
 }
 .button-nav > li {
   margin-right: 10px;
+
   padding-bottom: 50px;
 }
 
@@ -606,8 +607,8 @@ body {
 .portfolio {
   display: block;
   flex-wrap: wrap;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .elements {
   display: flex;
